@@ -1,0 +1,27 @@
+#container {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    display: block;
+}
+
+.ship-tracker {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.list {
+    border: black 3px solid;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+ 
+}
+.list-items {
+       font-size: medium;
+       list-style: none;
+}
