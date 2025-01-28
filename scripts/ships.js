@@ -8,20 +8,13 @@ document.addEventListener(
                 const haulerId = itemClicked.dataset.haulerid 
                 const shipName = itemClicked.dataset.shipname
                 let haulingShip = { name: "Incorrect" }
-            // Iterate the array of hauler objects
                 const haulerShip = getHaulingShips() 
                 for (const hauler of haulerShip) {
                     if (hauler.id === parseInt(haulerId)) {
-                        // Does the haulerId foreign key match the id of the current hauler?
                         haulingShip.name = hauler.name
                     }
                 }
                     window.alert(`${shipName} is being hauled by ${haulingShip.name}`)
-
-                    // Reassign the value of `haulingShip` to the current hauler
-
-            // Show an alert to the user with this format...
-            // Palais Royal is being hauled by Seawise Giant
             }
     }
 )
